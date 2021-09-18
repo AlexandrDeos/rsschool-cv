@@ -1,0 +1,120 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(22, 5, 56);
+  }
+
+html {
+    line-height: 1.15;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto; 
+    padding: 15px;
+    background: url('../img/11111.jpg');
+    background-size: auto; 
+    color: rgb(255, 255, 255);
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.header {
+    display: flex;
+}
+
+.header__photo img {
+    border-radius: 10%;
+    border: 3px solid rgb(2, 5, 37);
+}
+
+.header__info {
+    flex-direction: column;    
+}
+
+/* Contacts */
+.bio {
+    background-color: rgb(2, 5, 37);
+    padding: 0;
+    width: 470px;
+    padding-left: 20px;
+    margin-left: 10px;
+    border-bottom: 3px solid white;
+   
+}
+
+.bio h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.bio p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.line {
+    width: 90%px;
+}
+
+.contacts {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.contacts i {
+    line-height: 35px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.contacts a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(19, 41, 236);
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 3px;
+}
+
+.contacts a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    
+}
+
+/* Skills */
+.main li {
+    margin-top: 10px;
+    border: 3px solid rgb(2, 5, 37);
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(22, 5, 56);
+}
+
+.code pre {
+    font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link {
+   padding: 30px;
+   transition: 0.05s;
+}
+
+.footer__link:hover {
+    transform: scale(1.1); 
+}
