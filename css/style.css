@@ -1,6 +1,7 @@
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(22, 5, 56);
+    box-sizing: border-box;
   }
 
 html {
@@ -8,9 +9,10 @@ html {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 20px auto; 
-    padding: 15px;
+    /* padding: 15px; */
     background: url('../img/11111.jpg');
     background-size: auto; 
     color: rgb(255, 255, 255);
@@ -19,27 +21,33 @@ html {
 .heading {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 0;
 
 }
 
 .header {
     display: flex;
+    padding: 15px; 
 }
 
 .header__photo img {
     border-radius: 10%;
     border: 3px solid rgb(2, 5, 37);
-}
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+}  
 
 .header__info {
     flex-direction: column;    
+    width: 60%;
 }
 
 /* Contacts */
 .bio {
     background-color: rgb(2, 5, 37);
     padding: 0;
-    width: 470px;
+    width: 94%;
     padding-left: 20px;
     margin-left: 10px;
     border-bottom: 3px solid white;
@@ -89,22 +97,45 @@ html {
 }
 
 /* Skills */
+.main {
+    padding: 15px;
+}
+
 .main li {
     margin-top: 10px;
     border: 3px solid rgb(2, 5, 37);
-    width: 100px;
+    width: 110%;
     padding: 5px;
     text-align: center;
     border-radius: 10px;
     background-color: rgb(22, 5, 56);
 }
 
-.code pre {
+.about__skills {
+    display: flex;
+}
+
+.about__skills-extra {
+    margin-left: 200px;
+    padding-top: 50px;
+}
+
+.about__skills-extra p {
+    color: gray;
+}
+
+.example__item pre {
     font-size: 20px;
+    width: 100%;
+}
+
+.JAVASCRIPT {
+    border: 2px solid rgb(2, 5, 37);
 }
 
 /* FOOTER */
 .footer {
+    background-color: rgb(10, 16, 83);
     border-top: 2px solid white;
     display: flex;
     justify-content: space-between;
@@ -113,8 +144,142 @@ html {
 .footer__link {
    padding: 30px;
    transition: 0.05s;
+   width: 40%;
+}
+
+.footer__link rsschool img {
+    width: 300px;
+    height: 100px;
 }
 
 .footer__link:hover {
     transform: scale(1.1); 
+}
+
+.footer__link a {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+}
+
+.footer__link-text {
+    font-size: 30px;
+}
+
+.footer__year {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    padding-top: 60px;
+    padding-left: 72px;
+    width: 20%;
+}
+
+.github {
+    padding-top: 45px;
+}
+
+.github i {
+     padding-right: 10px;    
+}
+
+/* MEDIA */
+@media screen and (max-width:813px) {
+   
+    .bio h1 {
+        font-size: 30px;
+    }
+
+    .bio p, .contacts, .heading, .code pre {
+        font-size: 20px;
+    }
+
+    .about__skills {
+        flex-direction: column;
+    }
+
+    .main ul {
+        padding: 0;
+    }
+
+    .main li {
+        width: 98%;
+        list-style-type: none;
+    }
+
+    .about__skills-extra {
+        margin-left: 50px;
+        margin-bottom: 40px;
+        display: flex;
+    }
+
+    .about__skills-extra p {
+        margin-left: 30px;
+    }
+
+    .footer__link-text {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:606px) {
+
+    body {
+        text-align: center;
+    }
+
+    .container {
+     max-width: 370px;   
+    }
+
+    .bio {
+        width: 80%;
+        text-align: center;
+        padding: 0;
+        margin-left: 11%;
+    }
+
+    .header__info {    
+        width: 100%;
+    }
+
+    .header, .about__skills {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .header__photo img {
+        width: auto;
+        height: auto;
+    }
+
+   .code pre {
+        font-size: 13px;
+    }
+
+    .github {
+        padding-left: 20px;
+    }
+
+    .github i {
+        margin-right: 30px;
+    }
+
+    .footer__link-text {
+        font-size: 0;
+    }
+
+    .footer__year {
+        padding-left: 0;
+    }
+
+    .footer__link {
+        padding: 50px 20px 50px 30px;
+    }
+
 }
