@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/baaf8b6a14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/tomorrow-night-blue.min.css">
     <title>Alexandr Yasko CV</title>
 </head>
 
@@ -15,7 +16,7 @@
         <header class="header">
 
             <div class="header__photo">
-                <img src="img/photo_2020-09-22_20-47-42.jpg" width="300" height="400" alt="Photo">
+                <img src="img/photo_2021-09-19_21-29-24.jpg" alt="Photo">
             </div>
 
             <div class="header__info">
@@ -47,7 +48,7 @@
         <main class="main">
             <section class="main__information">
                 <div class="about">
-                    <h3 class="heading">Abot Me:</h3>
+                    <h3 class="heading">About Me:</h3>
                     <p>"I am a disciplined person, I try to learn something new and want to change everything for the
                         better, that's why I am here, my goal is to open up new opportunities for myself"</p>
 
@@ -56,12 +57,26 @@
                     </div>
 
                     <h3 class="heading">Skills:</h3>
-                    <ul>
-                        <li>HTML&CSS</li>
-                        <li>Git</li>
-                        <li>JS</li>
-                        <li>Photoshop</li>
-                    </ul>
+                    <div class="about__skills">
+
+                        <div class="about__skills-main">
+                            <ul>
+                                <li>HTML&CSS</li>
+                                <li>Git</li>
+                                <li>JS</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </div>
+
+                        <div class="about__skills-extra">
+
+                            <a href="https://mainacademy.ua/"><img class="extra__img"
+                                    src="https://mainacademy.ua/wp-content/uploads/2019/03/logo-footer-min.png"
+                                    alt="MainAcademy"></a>
+                            <p>(HTML5, CSS3 , JAVASCRIPT, REACT , REDUX , MATERIAL-UI)</p>
+                        </div>
+
+                    </div>
 
                     <div class="line">
                         <hr>
@@ -79,9 +94,9 @@
 
             <div class="example">
                 <h3 class="heading">Code Example:</h3>
-                    <div class="code">
-                        <pre>
-
+                <div class="example__item">
+                    <pre>
+                        <code class="JAVASCRIPT">
 	let accessAllowed;
 	let age = prompt('Your age?', '');
 	
@@ -92,28 +107,33 @@
 	}
 	
 	alert(accessAllowed);
+                        </code>
                    </pre>
-                    </div>
+
+                </div>
             </div>
 
         </main>
 
         <footer class="footer">
 
-            <div class="footer__link">
-                <a href="https://www.pluralsight.com/browse/software-development/javascript"><img
-                        src="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/js-logo.png" width="400"
-                        height="100" alt="js"></a>
+            <div class="footer__link github">
+                <a href="https://github.com/AlexandrDeos"><i class="fab fa-github"></i><span
+                        class="footer__link-text">My GitHub</span></a>
             </div>
-
-            <div class="footer__link">
-                <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school.svg" width="300"
-                        height="100" alt="rss"></a>
+            <p class="footer__year">2021</p>
+            <div class="footer__link rsschool">
+                <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school.svg" alt="rss"></a>
             </div>
 
         </footer>
 
     </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://kit.fontawesome.com/baaf8b6a14.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
